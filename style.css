@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+header div,
+header nav {
+    flex: 1;
+    /*border: 1px solid green;*/
+}
+
+header div .logo {
+    display: block;
+    width: fit-content;
+    margin: 5px 0px 5px 40px;
+}
+
+header div .logo img {
+    width: 180px;
+}
+
+header #header-click-btn {
+    display: none;
+}
+
+header .header-menu-btn {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    margin: 20px auto 0px;
+}
+
+header nav ul li {
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #262626;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #c62630;
+}
+
+header div .btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    float: right;
+    margin: 12px 40px 0px 0px;
+}
+
+header div .btn button {
+    padding: 10px 20px;
+    color: #262626;
+    font-size: 17px;
+    background-color: #E4E4E4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header div .btn button:hover {
+    background-color: #c62630;
+    color: white;
+}
+
+/* Hero */
+.hero-sec {
+    margin-top: 100px;
+    padding: 0px 50px;
+    /*border: 1px solid red;*/
+}
+
+.hero-sec .container {
+    display: flex;
+}
+
+.hero-sec .container div {
+    flex: 1;
+}
+
+.hero-sec .container div h1 {
+    font-size: 40px;
+    color: #c62630;
+    margin-top: 30px;
+}
+
+.hero-sec .container div p {
+    font-size: 20px;
+    color: #262626;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-sec .container div ul {
+    list-style: none;
+    color: #262626;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.hero-sec .container div ul li {
+    margin-bottom: 10px;
+}
+
+.hero-sec .container div ul li i {
+    color: #29cd29;
+    margin-right: 10px;
+}
+
+.hero-sec .container div .hero-btn {
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #c62630;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-sec .container div .hero-btn:hover {
+    background-color: #262626;
+}
+
+.hero-sec .container div .hero-car-img {
+    width: 80%;
+    float: right;
+    margin-top: 100px;
+}
+
+/* How to replace */
+.how-change-car {
+    /*border: 1px solid red;*/
+    padding: 0px 50px;
+    margin-top: 80px;
+}
+
+.how-change-car .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.how-change-car .container {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.how-change-car .container div {
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    width: 300px;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 7px 26px 4px #ababab8c;
+    -webkit-box-shadow: 6px 7px 26px 4px #ababab8c;
+    -moz-box-shadow: 6px 7px 26px 4px #ababab8c;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.how-change-car .container div:hover {
+    border: 1px solid #c62630;
+}
+
+.how-change-car .container div label {
+    color: #c62630;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-change-car .container div p {
+    color: #262626;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 30px 50px;
+    margin-top: 100px;
+}
+
+footer .flex-bt-div {
+    display: flex;
+}
+
+footer .flex-bt-div div {
+    flex: 1;
+    /*border: 1px solid red;*/
+}
+
+footer .flex-bt-div a {
+    text-decoration: none;
+    color: #767676;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .flex-bt-div a:hover {
+    color: #262626;
+}
+
+footer .flex-bt-div a:last-child {
+    margin-left: 10px;
+}
+
+
+footer .flex-bt-div p {
+    color: #767676;
+    font-size: 15px;
+    text-align: right;
+}
+
+
+/* Resopnsive */
+@media screen and (max-width: 1160px) {
+    /**/
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* Header */
+    header .mobile {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 20px 30px;
+        text-align: center;
+    }
+
+    footer .flex-bt-div {
+        display: block;
+    }
+
+    footer .flex-bt-div p {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Header */
+    header .header-menu-btn {
+        display: block;
+        color: #262626;
+        float: right;
+        font-size: 20px;
+        margin: 20px 40px 0px 0px;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: 40px;
+        right: -100%;
+        background-color: #262626ed;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #header-click-btn:checked~ul {
+        right: 0;
+    }
+
+    #header-click-btn:checked~.header-menu-btn i::before {
+        content: '\2715';
+        color: #c62630;
+        font-size: 20px;
+    }
+
+    header nav ul li {
+        margin: 0px 0px 20px;
+    }
+
+    header nav ul li a {
+        color: white;
+    }
+
+    header nav ul li a:hover {
+        color: #b1b1b1;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    /* Footer */
+    footer .flex-bt-div a {
+        display: block;
+    }
+
+    footer .flex-bt-div a:last-child {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    /* Header */
+    header nav ul {
+        top: 32px;
+    }
+
+    header div .logo {
+        margin: 5px 0px 5px 20px;
+    }
+
+    header div .logo img {
+        width: 150px;
+    }
+
+    header .header-menu-btn {
+        margin: 15px 20px 0px 0px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 10px 30px;
+    }
+}
