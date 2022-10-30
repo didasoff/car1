@@ -1,0 +1,871 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+header div,
+header nav {
+    flex: 1;
+    /*border: 1px solid green;*/
+}
+
+header div .logo {
+    display: block;
+    width: fit-content;
+    margin: 10px 0px 20px 40px;
+}
+
+header div .logo img {
+    width: 180px;
+}
+
+header #header-click-btn {
+    display: none;
+}
+
+header .header-menu-btn,
+.for-mobie-call-btn {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    margin: 20px auto 0px;
+}
+
+header nav ul li {
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #262626;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #c62630;
+}
+
+header div .btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    float: right;
+    margin: 12px 40px 0px 0px;
+}
+
+header div .btn button {
+    padding: 10px 20px;
+    color: #262626;
+    font-size: 17px;
+    background-color: #E4E4E4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header div .btn button:hover {
+    background-color: #c62630;
+    color: white;
+}
+
+/* Hero */
+.hero-sec {
+    margin-top: 100px;
+    padding: 0px 50px;
+    /*border: 1px solid red;*/
+}
+
+.hero-sec .container {
+    display: flex;
+}
+
+.hero-sec .container div {
+    flex: 1;
+}
+
+.hero-sec .container div h1 {
+    font-size: 40px;
+    color: #c62630;
+    margin-top: 30px;
+}
+
+.hero-sec .container div p {
+    font-size: 20px;
+    color: #262626;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-sec .container div ul {
+    list-style: none;
+    color: #262626;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.hero-sec .container div ul li {
+    margin-bottom: 10px;
+}
+
+.hero-sec .container div ul li i {
+    color: #29cd29;
+    margin-right: 10px;
+}
+
+.hero-sec .container div .hero-btn {
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #c62630;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-sec .container div .hero-btn:hover {
+    background-color: #262626;
+}
+
+.hero-sec .container div .hero-car-img {
+    width: 80%;
+    float: right;
+    margin-top: 100px;
+}
+
+/* How to replace */
+.how-change-car {
+    /*border: 1px solid red;*/
+    padding: 0px 50px;
+    margin-top: 80px;
+}
+
+.how-change-car .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.how-change-car .container {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.how-change-car .container div {
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    width: 300px;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 7px 26px 4px #ababab8c;
+    -webkit-box-shadow: 6px 7px 26px 4px #ababab8c;
+    -moz-box-shadow: 6px 7px 26px 4px #ababab8c;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.how-change-car .container div:hover {
+    border: 1px solid #c62630;
+}
+
+.how-change-car .container div label {
+    color: #c62630;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-change-car .container div p {
+    color: #262626;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* FAQ Section */
+.faq-sec {
+    /*border: 1px solid red;*/
+    padding: 100px 50px 0px;
+}
+
+.faq-sec .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-sec details {
+    margin-bottom: 10px;
+}
+
+.faq-sec details summary {
+    background-color: #E4E4E4;
+    padding: 10px 30px;
+    color: #262626;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-sec details p {
+    background-color: #efefef;
+    padding: 10px 30px;
+    color: #262626;
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.faq-sec details p a {
+    text-decoration: none;
+    color: #c62630;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-sec details p a:hover {
+    color: #262626;
+}
+
+.faq-sec details p a i {
+    margin: 0px 5px;
+}
+
+/* About Section */
+.about-sec {
+    /*border: 1px solid red;*/
+    padding: 100px 50px 0px;
+}
+
+.about-sec .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-sec .container {
+    display: flex;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.about-sec .container .sub-container {
+    /*border: 1px solid red;*/
+    flex: auto;
+}
+
+.about-sec .container .sub-container .ab-img {
+    width: 300px;
+}
+
+.about-sec .container .sub-container .ab-img-mobile {
+    display: none;
+}
+
+.about-sec .container .sub-container div {
+    border-left: 2px solid #262626;
+    height: 80%;
+    margin-top: 60px;
+    padding: 50px 30px 0px;
+}
+
+.about-sec .container .sub-container div .ab-tit {
+    color: #c62630;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-sec .container .sub-container div .ab-para {
+    color: #262626;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Not my fault */
+.not-my-fault {
+    /*border: 1px solid red;*/
+    padding: 100px 50px 0px;
+}
+
+.not-my-fault .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.not-my-fault form {
+    background-color: white;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 6px 7px 26px 4px #ababab8c;
+    -webkit-box-shadow: 6px 7px 26px 4px #ababab8c;
+    -moz-box-shadow: 6px 7px 26px 4px #ababab8c;
+}
+
+.not-my-fault .container {
+    display: flex;
+}
+
+.not-my-fault .container .sub-container {
+    flex: 1;
+    /*border: 1px solid red;*/
+}
+
+.not-my-fault .container .sub-container .nmf-tit {
+    color: #262626;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.not-my-fault .container .sub-container .nmf-tit i {
+    color: #c62630;
+    font-weight: bold;
+}
+
+.not-my-fault .container .sub-container:first-child {
+    margin-right: 20px;
+}
+
+.not-my-fault .container .sub-container:last-child {
+    margin-left: 20px;
+}
+
+.not-my-fault .container .sub-container .nmf-c-name,
+.not-my-fault .container .sub-container .nmf-car-mm,
+.not-my-fault .container .sub-container .nmf-car-year,
+.not-my-fault .container .sub-container .nmf-post-code,
+.not-my-fault .container .sub-container .nmf-state,
+.not-my-fault .container .sub-container .nmf-number,
+.not-my-fault .container .sub-container .nmf-email {
+    background-color: #E4E4E4;
+    color: #262626;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.not-my-fault .container .sub-container .for-fault {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.not-my-fault .container .sub-container .for-fault .nmf-whose-fault {
+    background-color: #E4E4E4;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    color: #262626;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+}
+
+.nmf-whose-fault-middle {
+    margin: 0px 10px;
+}
+
+.not-my-fault .container .sub-container .for-fault input {
+    display: none;
+}
+
+.not-my-fault form .nmf-apply {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #c62630;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto 0px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.not-my-fault form .nmf-apply:hover {
+    background-color: #262626;
+}
+
+/* Brands */
+.brand-sec {
+    /*border: 1px solid red;*/
+    padding: 100px 50px 0px;
+}
+
+.brand-sec .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . .";
+}
+
+/*.brand-sec .container div {
+    border: 1px solid red;
+}*/
+
+.brand-sec .container div img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+/* Customer Review */
+.review-sec {
+    /*border: 1px solid red;*/
+    padding: 100px 50px 0px;
+}
+
+.review-sec .sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.review-sec .owl-carousel .review {
+    border: 1px solid #E4E4E4;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 30px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.review-sec .owl-carousel .review:hover {
+    box-shadow: 6px 7px 26px 4px #ababab8c;
+    -webkit-box-shadow: 6px 7px 26px 4px #ababab8c;
+    -moz-box-shadow: 6px 7px 26px 4px #ababab8c;
+}
+
+.review-sec .owl-carousel .review .ru-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.review-sec .owl-carousel .review .ru-car-name {
+    font-size: 18px;
+    color: #262626;
+    margin: 8px 0px 10px;
+}
+
+.review-sec .owl-carousel .review .ru-review {
+    font-size: 15px;
+    color: #262626;
+}
+
+.review-sec .owl-carousel .review .ru-star {
+    color: #c62630;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 30px 50px;
+    margin-top: 30px;
+}
+
+footer .flex-bt-div {
+    display: flex;
+}
+
+footer .flex-bt-div div {
+    flex: 1;
+    /*border: 1px solid red;*/
+}
+
+footer .flex-bt-div a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .flex-bt-div a:hover {
+    color: #c62630;
+}
+
+footer .flex-bt-div a:last-child {
+    margin-left: 10px;
+}
+
+
+footer .flex-bt-div p {
+    color: #262626;
+    font-size: 18px;
+    text-align: right;
+}
+
+
+/* Resopnsive */
+@media screen and (max-width: 1000px) {
+
+    /* Header */
+    header .mobile {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-sec .container {
+        display: block;
+    }
+
+    .hero-sec .container div h1 {
+        text-align: center;
+    }
+
+    .hero-sec .container div p {
+        text-align: center;
+    }
+
+    .hero-sec .container div ul {
+        text-align: center;
+    }
+
+    .hero-sec .container div .hero-btn {
+        margin: 15px auto 0px;
+    }
+
+    .hero-sec .container div .hero-car-img {
+        display: block;
+        float: none;
+        margin: 50px auto 0px;
+        width: 400px;
+    }
+
+    .hero-sec .container div .for-mobie-call-btn {
+        display: block;
+        width: fit-content;
+        margin: 30px auto 10px;
+    }
+
+    .hero-sec .container div .for-mobie-call-btn button {
+        padding: 10px 30px;
+        font-size: 18px;
+        color: #262626;
+        background-color: #E4E4E4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hero-sec .container div .for-mobie-call-btn button:hover {
+        background-color: #c62630;
+        color: white;
+    }
+
+    /* How to replace */
+    .how-change-car .container {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .how-change-car .container div {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    /* About Section */
+    .about-sec .container {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .about-sec .container .sub-container .ab-img {
+        display: none;
+    }
+
+    .about-sec .container .sub-container .ab-img-mobile {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-sec .container .sub-container div {
+        border: none;
+        height: fit-content;
+        margin-top: 0px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Brands */
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". . . .";
+    }
+
+    /* Review */
+    .review-sec {
+        padding: 100px 0px 0px !important;
+    }
+
+    .review-sec .owl-carousel .review {
+        margin: 0px 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px 30px;
+        text-align: center;
+    }
+
+    footer .flex-bt-div {
+        display: block;
+    }
+
+    footer .flex-bt-div p {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Header */
+    header .header-menu-btn {
+        display: block;
+        color: #262626;
+        float: right;
+        font-size: 20px;
+        margin: 20px 40px 0px 0px;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: 45px;
+        right: -100%;
+        background-color: #262626ed;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #header-click-btn:checked~ul {
+        right: 0;
+    }
+
+    #header-click-btn:checked~.header-menu-btn i::before {
+        content: '\2715';
+        color: #c62630;
+        font-size: 20px;
+    }
+
+    header nav ul li {
+        margin: 0px 0px 20px;
+    }
+
+    header nav ul li a {
+        color: white;
+    }
+
+    header nav ul li a:hover {
+        color: #b1b1b1;
+    }
+
+    /* Hero */
+    .hero-sec {
+        padding: 0px 40px;
+    }
+
+    .hero-sec .container div .hero-car-img {
+        width: 90%;
+    }
+
+    /* How to replace */
+    .how-change-car {
+        padding: 0px 40px;
+    }
+
+
+    /* FAQ section */
+    .faq-sec {
+        padding: 100px 40px 0px;
+    }
+
+    /* About section */
+    .about-sec {
+        padding: 100px 40px 0px;
+    }
+
+    /* Not my fault */
+    .not-my-fault {
+        padding: 100px 40px 0px;
+    }
+
+    .not-my-fault .container {
+        display: block;
+    }
+
+    .not-my-fault .container .sub-container:first-child,
+    .not-my-fault .container .sub-container:last-child {
+        margin: 0px;
+    }
+
+    .brand-sec {
+        padding: 100px 40px 0px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    /* Brands */
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            ". . .";
+    }
+
+    .brand-sec .container div img {
+        width: 80px;
+    }
+
+    /* Footer */
+    footer .flex-bt-div a {
+        display: block;
+    }
+
+    footer .flex-bt-div a:last-child {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    /* Header */
+    header nav ul {
+        top: 28px;
+    }
+
+    header div .logo {
+        margin: 10px 0px 10px 20px;
+    }
+
+    header div .logo img {
+        width: 150px;
+    }
+
+    header .header-menu-btn {
+        margin: 15px 20px 0px 0px;
+    }
+
+    /* All padding in one place */
+    .hero-sec,
+    .how-change-car,
+    .faq-sec,
+    .about-sec,
+    .not-my-fault,
+    .brand-sec {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faq-sec,
+    .about-sec,
+    .not-my-fault {
+        padding-top: 60px;
+    }
+
+    .hero-sec .container div h1 {
+        font-size: 30px;
+    }
+
+    .hero-sec .container div p {
+        font-size: 18px;
+    }
+
+    .hero-sec .container div ul li {
+        font-size: 15px;
+    }
+
+    .sec-title {
+        font-size: 25px !important;
+    }
+
+    .how-change-car .container div label,
+    .review-sec .owl-carousel .review .ru-name {
+        font-size: 18px;
+    }
+
+    .how-change-car .container div p,
+    .faq-sec details summary,
+    .faq-sec details p,
+    .about-sec .container .sub-container div .ab-tit,
+    .about-sec .container .sub-container div .ab-para,
+    .not-my-fault .container .sub-container .nmf-tit,
+    .not-my-fault .container .sub-container .nmf-c-name,
+    .not-my-fault .container .sub-container .nmf-car-mm,
+    .not-my-fault .container .sub-container .nmf-car-year,
+    .not-my-fault .container .sub-container .nmf-post-code,
+    .not-my-fault .container .sub-container .nmf-state,
+    .not-my-fault .container .sub-container .nmf-number,
+    .not-my-fault .container .sub-container .nmf-email,
+    .not-my-fault .container .sub-container .for-fault .nmf-whose-fault,
+    .not-my-fault form .nmf-apply,
+    .review-sec .owl-carousel .review .ru-car-name,
+    footer .flex-bt-div a,
+    footer .flex-bt-div p {
+        font-size: 15px;
+    }
+
+    .not-my-fault .container .sub-container .for-fault .nmf-whose-fault {
+        padding: 10px;
+    }
+
+    .not-my-fault form {
+        padding: 30px 15px;
+    }
+    /* Footer */
+    footer {
+        padding: 30px 10px 30px;
+    }
+}

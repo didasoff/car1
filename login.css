@@ -1,0 +1,57 @@
+.login {
+    height: 100vh;
+}
+
+.sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+}
+
+form input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.email,
+.password {
+    border: 1px solid #262626;
+    color: #262626;
+    outline: none;
+}
+
+.login-btn {
+    margin-top: 20px;
+    background-color: #c62630;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #262626;
+}
+
+@media screen and (max-width: 650px) {
+    .sec-title {
+        font-size: 20px;
+    }
+    form {
+        width: 90%;
+    }
+    form input {
+        font-size: 15px;
+    }
+}

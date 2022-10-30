@@ -1,0 +1,85 @@
+.dashboard {
+    padding: 0px 40px;
+}
+
+.sec-title {
+    font-size: 30px;
+    color: #c62630;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.t-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr th{
+    background-color: #262626;
+    padding: 10px 12px;
+    text-align: left;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+table tbody tr td {
+    background-color: #E4E4E4;
+    padding: 10px 12px;
+    text-align: left;
+    color: #262626;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+table tbody tr td .comp,
+table tbody tr td .delete {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+table tbody tr td .comp i,
+table tbody tr td .delete i {
+    margin-right: 5px;
+}
+
+table tbody tr td .comp {
+    background-color: #4834d4;
+}
+
+table tbody tr td .comp:hover {
+    background-color: #262626;
+}
+
+table tbody tr td .delete {
+    background-color: #eb4d4b;
+}
+
+table tbody tr td .delete:hover {
+    background-color: #262626;
+}
+
+
+/* Resopnsive */
+@media screen and (max-width: 1000px) {
+    .dashboard {
+        padding: 0px 20px;
+    }
+    .user-data {
+        overflow: auto;
+    }
+    table thead tr th,
+    table tbody tr td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+  white-space: nowrap;
+    }
+}
